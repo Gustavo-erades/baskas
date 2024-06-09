@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "baskas1";
+    src: url("../fontes/Basketball.ttf");
+}
+@font-face {
+    font-family: "bebas";
+    src: url("../fontes/Bebas-Regular.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0F1012;
+    color: #d8d7d7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(28, 28, 28) #ff4f28;
+}
+::-webkit-scrollbar{
+	width: 12px;
+	background-color: rgb(28, 28, 28); 
+}
+::-webkit-scrollbar-thumb{
+	background-color: #ff4f28;
+	border-radius: 3px;
+}
+nav{
+    padding: 2em 0;
+}
+.nav .nav-item a.active{
+    background-color:#0F1012;
+    border:1px solid #7e1a03;
+    color:#ff2f00;
+}
+.nav .nav-item a{
+    color: rgb(255, 255, 255);
+}
+.nav .nav-item a:hover{
+    color: #ff2f00;
+    border:1px solid #7e1a03;
+}
+.dropdown-menu a.dropdown-item{
+    color:#1b1919
+}
+.nav .nav-item .dropdown-menu{
+    background-color: #0F1012;
+    color:#d8d7d7;
+}
+.nav .nav-item .dropdown-menu a:hover{
+    background-color: #000000;
+    color:#ff2f00;
+}
+.nav .nav-item .dropdown-menu a{
+    color:#d8d7d7;
+}
+.dropdown-divider{
+    background-color:#4b4b4b;
+}
+.img-card{
+    height: 100%;
+}
+.divTitulo{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background: url("../images/fundoTitulo-cinza2.jpeg") center no-repeat;
+    margin-bottom: 30px;
+}
+#votacoes, #divMVP, #procuraJogador{
+    margin-bottom: 20px;
+}
+h5.card-title{
+    font-weight: bold;
+}
+h1{
+    font-family: "baskas1";
+    text-transform: uppercase;
+    font-size: 8em;
+    color: #ff4f28;
+    text-shadow: 2px 2px 2px #232323;
+}
+h2{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#MVPdoMes{
+    font-family: "baskas1";
+    color: #ff4f28;
+    font-size: 1.8em;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+a#linkEu{
+    color:#d8d7d7;
+    text-decoration: none;
+}
+a#linkEu:hover{
+    color: #ff2f00;
+    text-decoration: underline;
+}
+hr{
+    color:#ff2f00;
+}
+#inputPesquisa{
+    background-color: #ac1f00;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 15px;
+}
+#inputPesquisa:focus{
+    box-shadow: none;
+    background-color: #d72a03;
+}
+#inputPesquisa::placeholder{
+    color:#dddddd;
+    text-transform: none;
+}
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.divPesquisa{
+    margin-bottom: 35px;
+}
+div.card{
+    background-color: #dddddd;
+}
+a{
+    color:#ff2f00;
+}
+a.btn{
+    color: #ff2f00;
+    background-color: #0F1012;
+    font-weight: bold;
+}
+a.btn:hover{
+    color:#0F1012;
+    background-color: #ff2f00;
+}
+div.card-header{
+    background-color: #f83f15;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+img#imagem-tela-grande{
+    display: block;
+}
+img#imagem-tela-pequena{
+    display: none;
+}
+span.soma{
+    color: #15f84a;
+}
+.ulAttr{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.ulAttr>li>h6{
+    text-transform: uppercase;
+    color: #ff4f28;
+}
+@media (max-width: 767.98px) { 
+    h1{
+        font-size: 6em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    img#imagem-tela-grande{
+        display: none;
+    }
+    img#imagem-tela-pequena{
+        display: block;
+    }
+    div.card-header{
+        font-size: 1.3em;
+    }
+}
