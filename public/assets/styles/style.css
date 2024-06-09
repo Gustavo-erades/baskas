@@ -174,6 +174,46 @@ span.soma{
     text-transform: uppercase;
     color: #ff4f28;
 }
+.attrFinais{
+    display:flex;
+    justify-content:center;
+}
+ul.attrFinais>li{
+    margin-left: 2rem;
+    text-transform: uppercase;
+    color:#7e1a03;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.divEloCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divEloCard>h6{
+    font-size: 1.2em;
+}
+.eloCard{
+    background-color: #f83f15;
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eloCard .numElo{
+    font-family: "bebas";
+    font-weight: bold;
+    font-size: 3em;
+}
+.titulos{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.nomeJogador{
+    font-size: 1.3em;
+}
 @media (max-width: 767.98px) { 
     h1{
         font-size: 6em;
