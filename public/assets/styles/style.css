@@ -165,6 +165,9 @@ img#imagem-tela-pequena{
 span.soma{
     color: #15f84a;
 }
+span.sub{
+    color: #f81515;
+}
 .ulAttr{
     list-style: none;
     display: grid;
@@ -213,6 +216,14 @@ ul.attrFinais>li{
 }
 .nomeJogador{
     font-size: 1.3em;
+}
+.baskasSemana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.baskasSemana>.card{
+    margin-left: 8px;
 }
 @media (max-width: 767.98px) { 
     h1{
