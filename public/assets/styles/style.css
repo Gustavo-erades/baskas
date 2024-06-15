@@ -222,8 +222,16 @@ ul.attrFinais>li{
     align-items: center;
     justify-content: center;
 }
-.baskasSemana>.card{
-    margin-left: 8px;
+.baskasSemana .card{
+    margin: 0 auto;
+    padding: 0;
+    width: 18rem;
+}
+.baskasSemana #card-margin{
+    margin: 0 10px;
+}
+.bg-warning{
+    background-color: #ffa407;
 }
 @media (max-width: 767.98px) { 
     h1{
@@ -240,5 +248,17 @@ ul.attrFinais>li{
     }
     div.card-header{
         font-size: 1.3em;
+    }
+    .card-meio{
+        margin: 0
+    }
+    .baskasSemana .card{
+        margin-bottom:10px;
+    }
+    .baskasSemana #card-margin{
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 0;
+       margin-bottom: 10px;
     }
 }
