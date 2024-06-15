@@ -7,3 +7,6 @@ button.btn:hover{
     color:#0F1012;
     background-color: #ff2f00;
 }
+input.form-control{
+    padding: 15px;
+}
