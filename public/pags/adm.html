@@ -7,11 +7,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="shortcut icon" href="../assets/icones/iconePagina.png" type="image/x-icon">
   <link rel="stylesheet" href="../assets/styles/style.css">
-  <link rel="stylesheet" href="../assets/styles/styleAdm.css">
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
     defer></script>
-  <title>Baskas</title>
+  <title>Baskas-Adm</title>
 </head>
 <body>
   <!-- barra de navegação -->
@@ -53,15 +53,12 @@
         <div class="card-body">
           <h5 class="card-title">Insira abaixo sua credencial e acesse o painel administrativo</h5>
           <div>
-            <form>
+            <form action="admHome.html">
               <div style="margin:20px 0;" >
-                <input type="password" class="form-control" width="100%">
+                <input type="password" class="form-control" width="100%" id="inputCredAdm">
               </div>
-              <button class="btn" type="submit">
+              <button class="btn" type="submit" id="buttonCredAdm">
                 Acessar painel
-              </button>
-              <button class="btn">
-                Nova credencial
               </button>
             </form>
           </div>  
