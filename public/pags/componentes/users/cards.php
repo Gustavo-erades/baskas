@@ -10,17 +10,15 @@
   <div class="cards_jogadores">
     <div class="card">
       <div class="row">
-        <div class="col-md-4">
-          <img src="../assets/images/imgTeste.jpeg" class="card-image-top image-fluid rounded-start" width="100%"
-            height="100%" id="imagem-tela-grande">
-          <img src="../assets/images/imgTeste.jpeg" class="card-image-top image-fluid rounded-top" width="100%"
-            height="100%" id="imagem-tela-pequena">
+        <div class="col-lg-4">
+          <img src="./assets/images/imgTeste.jpeg" class="card-image-top image-fluid rounded-start" width="100%" height="100%" id="imagem-tela-grande">
+          <img src="./assets/images/imgTeste.jpeg" class="card-image-top image-fluid rounded-top" width="100%" height="100%" id="imagem-tela-pequena">
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-8">
           <div class="card-body">
             <h5 class="card-title nomeJogador">Nome</h5>
             <ul class="ulAttr">
-               <li class="liAttr">
+              <li class="liAttr">
                 <h6>Passe</h6>
                 ??
               </li>
@@ -30,7 +28,7 @@
               </li>
               <li class="liAttr">
                 <h6>Shot 3</h6>
-                 ??
+                ??
               </li>
               <li class="liAttr">
                 <h6>Infilt</h6>
@@ -45,7 +43,7 @@
                 ??
               </li>
               <li class="liAttr">
-                 <h6>Resist</h6>
+                <h6>Resist</h6>
                 ??
               </li>
               <li class="liAttr">
@@ -63,12 +61,12 @@
             </ul>
             <hr>
             <div class="row">
-              <ul class="col-12 col-md-6 ulAttr attrFinais">
+              <ul class="col-12 col-lg-6 ulAttr attrFinais">
                 <li>Visão ?? </li>
                 <li>Clutch ??</li>
                 <li>Decisão ??</li>
               </ul>
-              <div class="col-12 col-md-6 divEloCard">
+              <div class="col-12 col-lg-6 divEloCard">
                 <span class="eloCard">
                   <h4 class="numElo" style="color: #3e0d01;">90</h4>
                 </span>

@@ -1,0 +1,10 @@
+form.card{
+    background-color: #dddddd;
+}
+.inputCard{
+    width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}

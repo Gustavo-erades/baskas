@@ -38,8 +38,7 @@ main {
 .side-item.active {
     background-color: #ff4f28;
 }
-.side-item:hover:not(.active),
-#logout_btn:hover {
+.side-item:hover:not(.active) {
     background-color: #e3e9f7;
     color:#000;
 }
@@ -121,6 +120,13 @@ main {
 #sidebar.open-sidebar .side-item a {
     justify-content: flex-start;
     gap: 14px;
+}
+#logout_btn:hover a{
+    color:#e3e9f7;
+    text-decoration: underline;
+}
+#linkLogout{
+    text-decoration: none;
 }
 @media(max-width: 575.98px){
     main{
