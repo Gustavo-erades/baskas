@@ -3,7 +3,8 @@
     include_once("pesquisaJogador.html");
     ?>
     <div class="cards_jogadores">
-        <form action="../app/helpers/alterarAttr.php" method="GET">
+        <!--action="../app/helpers/alterarAttr.php" method="GET"-->
+        <form  id="formCard">
             <div class="card">
                 <div class="row">
                     <div class="col-lg-4">
@@ -96,3 +97,4 @@
         </form>
     </div>
 </div>
+<script src="./assets/scripts/apiCalcCards.js"></script>
