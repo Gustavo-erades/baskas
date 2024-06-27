@@ -11,21 +11,12 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/styleSidebarAdm.css">
     <link rel="stylesheet" href="./assets/styles/styleAlterarCards.css">
+    <link rel="stylesheet" href="./assets/styles/styleLoading.css">
     <link rel="shortcut icon" href="./assets/icones/iconePagina.png" type="image/x-icon">
     <title>Baskas-Painel administrativo</title>
-    <style>
-        #teste {
-            display: none;
-        }
-
-        #load {
-            display: block;
-        }
-    </style>
 </head>
-
 <body>
-    <div id="teste">
+    <div id="conteudoPag">
         <?php
         include_once("./pags/componentes/adm/menuAdm.php");
         ?>
@@ -38,17 +29,8 @@
             ?>
         </main>
     </div>
-    <div id="load" style="margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;">
-        <div style="align-items:center;justify-content:center;">
-            <div style="padding-left:28px;margin-bottom:8px">
-            <i class="fa-solid fa-basketball fa-bounce fa-2xl" style="color: #ff2f00;"></i>
-            </div>
-            
-            <p style="color:#ff2f00;">carregando...</p>
-        </div>
-    </div>
     <script src="./assets/scripts/sideBarAdm.js"></script>
-    <script src="./assets/scripts/loading.js"></script>
+    <script src="./assets/scripts/loadingPags.js"></script>
 </body>
 
 </html>
