@@ -23,6 +23,10 @@
                 ??
               </li>
               <li class="liAttr">
+                <h6>Rebot</h6>
+                ??
+              </li>
+              <li class="liAttr">
                 <h6>Shot</h6>
                 ??
               </li>
@@ -39,11 +43,11 @@
                 ??
               </li>
               <li class="liAttr">
-                <h6>Contrl</h6>
+                <h6>Contr</h6>
                 ??
               </li>
               <li class="liAttr">
-                <h6>Resist</h6>
+                <h6>Toco</h6>
                 ??
               </li>
               <li class="liAttr">
@@ -55,7 +59,11 @@
                 ??
               </li>
               <li class="liAttr">
-                <h6>Defesa</h6>
+                <h6>Velo</h6>
+                ??
+              </li>
+              <li class="liAttr">
+                <h6>Def</h6>
                 ??
               </li>
             </ul>
@@ -68,7 +76,7 @@
               </ul>
               <div class="col-12 col-lg-6 divEloCard">
                 <span class="eloCard">
-                  <h4 class="numElo" style="color: #3e0d01;">90</h4>
+                  <h4 class="numElo" style="color: #3e0d01;">??</h4>
                 </span>
               </div>
             </div>

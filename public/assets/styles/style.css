@@ -172,7 +172,7 @@ span.sub{
 .ulAttr{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 .ulAttr>li>h6{
     text-transform: uppercase;
