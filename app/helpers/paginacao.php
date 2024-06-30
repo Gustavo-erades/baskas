@@ -8,9 +8,13 @@
             $conteudo=$_SESSION["path"]."pagsUsers/login.php";
         break;
         case 'adm-0':
-            $conteudo=$_SESSION["path"]."pagsAdm/admHome.php";
+            if(isset($_SESSION["logado"])){
+                $conteudo=$_SESSION["path"]."pagsAdm/admHome.php";
+            }else{
+                $conteudo=$_SESSION["path"]."erro404.html";
+            }
         break;
         default:
-            $conteudo=$_SESSION["path"]."pagsUsers/home.php";
+            $conteudo=$_SESSION["path"]."erro404.html";
         break;
     }
