@@ -6,7 +6,7 @@ function atualizaCard($data)
     $sql = 'UPDATE bd_baskas.jogadores 
             SET elo=?, passe=?, rebot=?, shot=?, shot3=?, 
             infilt=?, bandj=?, contr=?, toco=?, roubo=?, 
-            forca=?, velo=?, def=?, visao=?, clutch=?, decisao=? 
+            forca=?, velo=?, def=?, visao=?, clutch=?, decisao=?, historico=?
             WHERE nome=?';
     $stmt = mysqli_prepare($conn, $sql);
     if ($stmt === false) {
@@ -14,7 +14,7 @@ function atualizaCard($data)
     }
     mysqli_stmt_bind_param(
         $stmt,
-        'dddddddddddddddds',
+        'ddddddddddddddddds',
         $data[0], //elo
         $data[1], //passe
         $data[2], //rebot
@@ -31,7 +31,8 @@ function atualizaCard($data)
         $data[13], //visao
         $data[14], //clutch
         $data[15], //decisao
-        $data[16], //nome
+        $data[16],//historico
+        $data[17], //nome
     );
     $result = mysqli_stmt_execute($stmt);
     if ($result === false) {

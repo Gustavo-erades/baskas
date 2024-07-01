@@ -19,6 +19,7 @@ if (isset($_POST['salvarAttr'])) {
     $visao =  intval($_POST['visao']);
     $clutch =  intval($_POST['clutch']);
     $decisao =  intval($_POST['decisao']);
+    $historico =  intval($_POST['historico']);
 
     $peso1 = [$toco, $roubo, $forca, $velo, $clutch];
     $peso2 = [$passe, $rebot, $shot3, $infilt, $bandj, $contr];
@@ -34,9 +35,12 @@ if (isset($_POST['salvarAttr'])) {
     for ($i = 0; $i < sizeof($peso3); $i++) {
         $valMult = $valMult + ($peso3[$i] * 3);
     }
-    $med = round($valMult / 29);
-
-    $data=[$med,$passe,$rebot,$shot,$shot3,$infilt,$bandj,$contr,$toco,$roubo,$forca,$velo,$def,$visao,$clutch,$decisao,$nome];
+    if($historico!=0){
+        $med = round(($valMult+($historico*4))/ 33);
+    }else{
+        $med = round($valMult/29);
+    }
+    $data=[$med,$passe,$rebot,$shot,$shot3,$infilt,$bandj,$contr,$toco,$roubo,$forca,$velo,$def,$visao,$clutch,$decisao,$historico,$nome];
     atualizaCard($data);
 
 } else {

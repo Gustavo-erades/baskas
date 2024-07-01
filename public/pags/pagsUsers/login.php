@@ -34,9 +34,9 @@
           <div class="card-body">
             <h5 class="card-title">Insira abaixo sua credencial e acesse o painel administrativo</h5>
             <div>
-              <form action="../app/helpers/validaLogin.php">
+              <form action="../app/helpers/validaLogin.php" method="POST">
                 <div style="margin:20px 0;">
-                  <input type="password" class="form-control" width="100%" id="inputCredAdm">
+                  <input type="password" class="form-control" width="100%" id="inputCredAdm" style="text-align: center;" name="inputCredAdm" required>
                 </div>
                 <button class="btn" type="submit" id="buttonCredAdm">
                   Acessar painel
