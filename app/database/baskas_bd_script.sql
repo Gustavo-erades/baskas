@@ -20,6 +20,13 @@ create table jogadores(
     clutch int not null,
     decisao int not null
 );
+create table users(
+	id int not null auto_increment primary key,
+    nome varchar(20) not null,
+    senha varchar(32) not null
+);
+insert into bd_baskas.users values(1,"adm","39d5fe4486aba8ee4de086f326c70de9");
+
 alter table bd_baskas.jogadores add historico int;
 insert into bd_baskas.jogadores values(1,"Gugu",78,78,85,83,60,85,79,74,80,82,70,90,80,73,83,73,0);
 insert into bd_baskas.jogadores values(2,"China",50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0);
@@ -36,3 +43,5 @@ insert into bd_baskas.jogadores values(10,"Cris",50,50,50,50,50,50,50,50,50,50,5
 insert into bd_baskas.jogadores values(11,"Alejandro",50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0);
 insert into bd_baskas.jogadores values(12,"Douglas",50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0);
 insert into bd_baskas.jogadores values(13,"Victor",50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0);
+
+insert into bd_baskas.jogadores values(14,"Mateus",50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0);
