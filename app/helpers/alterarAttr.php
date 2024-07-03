@@ -36,7 +36,7 @@ if (isset($_POST['salvarAttr'])) {
         $valMult = $valMult + ($peso3[$i] * 3);
     }
     if($historico!=0){
-        $med = round(($valMult+($historico*2))/ 29);
+        $med = round(($valMult+($historico*15))/44);
     }else{
         $med = round($valMult/29);
     }
