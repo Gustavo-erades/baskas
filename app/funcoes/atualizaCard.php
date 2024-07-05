@@ -1,7 +1,8 @@
 <?php
 function atualizaCard($data)
 {
-    include_once("../database/conexao.php");
+    include("../database/conexao.php");
+    include("../funcoes/calcHistorico.php");
 
     $sql = 'UPDATE bd_baskas.jogadores 
             SET elo=?, passe=?, rebot=?, shot=?, shot3=?, 
@@ -10,8 +11,11 @@ function atualizaCard($data)
             WHERE nome=?';
     $stmt = mysqli_prepare($conn, $sql);
     if ($stmt === false) {
-        die('Erro na preparação da declaração SQL: ' . mysqli_error($conn));
+        die('Erro na preparação da declaração SQL (atualizaCard): ' . mysqli_error($conn));
     }
+
+    $valHist=calcHistorico($data[17]);
+
     mysqli_stmt_bind_param(
         $stmt,
         'ddddddddddddddddds',
@@ -31,7 +35,7 @@ function atualizaCard($data)
         $data[13], //visao
         $data[14], //clutch
         $data[15], //decisao
-        $data[16],//historico
+        $valHist,//historico
         $data[17], //nome
     );
     $result = mysqli_stmt_execute($stmt);
@@ -41,4 +45,5 @@ function atualizaCard($data)
         header("Location:../../public/index.php?cod=adm-0");
     }
     mysqli_stmt_close($stmt);
+    $conn->close();
 }

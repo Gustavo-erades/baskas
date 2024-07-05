@@ -2,7 +2,7 @@ create database bd_baskas;
 use bd_baskas;
 create table jogadores(
 	id int auto_increment not null primary key,
-    nome varchar(30) not null,id
+    nome varchar(30) not null,
     elo int not null,
     passe int not null,
     rebot int not null,
@@ -20,11 +20,21 @@ create table jogadores(
     clutch int not null,
     decisao int not null
 );
+alter table bd_baskas.jogadores modify historico double;
+alter table bd_baskas.historico modify id int  not null auto_increment;
 create table users(
 	id int not null auto_increment primary key,
     nome varchar(20) not null,
     senha varchar(32) not null
 );
+create table historico(
+	id int not null primary key,
+    jogador varchar(30) not null,
+    dia datetime not null,
+    elo int not null,
+    historico double
+);
+
 insert into bd_baskas.users values(1,"adm","39d5fe4486aba8ee4de086f326c70de9");
 
 alter table bd_baskas.jogadores add historico int;
@@ -45,3 +55,4 @@ insert into bd_baskas.jogadores values(12,"Douglas",50,50,50,50,50,50,50,50,50,5
 insert into bd_baskas.jogadores values(13,"Victor",50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0);
 
 insert into bd_baskas.jogadores values(14,"Mateus",50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0);
+INSERT INTO bd_baskas.historico VALUES( 'teste', '2024-07-05', 10, 10);

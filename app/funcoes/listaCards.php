@@ -88,20 +88,25 @@ function listaCards()
                                                 <?= $card['elo'] ?>
                                             </h4>
                                         </span>
-                                    </div>   
+                                    </div>
                                 </div>
                                 <div class="divHistorico">
                                     <label for="hist">hist</label>
-                                    <input type='number' class='inputCard' value=<?= $card['historico'] ?>  name='historico' id="hist">
+                                    <input type='number' class='inputCard' value=<?= $card['historico'] ?> name='historico' id="hist" style="width:70px;">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class='mt-2 mb-4'>
-                    <button class='btn btn-link' id='alterarCard' type='submit' name='salvarAttr' value=<?=$card['nome']?>>
+                    <button class='btn btn-link' id='alterarCard' type='submit' name='salvarAttr' value=<?= $card['nome'] ?>>
                         salvar
                     </button>
+                    <button class='btn btn-link' id='alterarCard' type='submit' name='salvarAttr' value=<?= $card['nome'] ?>>
+                    <a href="../app/funcoes/exibeHistorico.php?jogador=<?=$card['nome']?>">
+                        histórico
+                    </a>
+                </button>
                 </div>
             </form>
         </div>

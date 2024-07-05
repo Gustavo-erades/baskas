@@ -1,5 +1,6 @@
 <?php
 include_once("../funcoes/atualizaCard.php");
+include_once("../funcoes/insereHistorico.php");
 
 if (isset($_POST['salvarAttr'])) {
 
@@ -41,8 +42,11 @@ if (isset($_POST['salvarAttr'])) {
         $med = round($valMult/29);
     }
     $data=[$med,$passe,$rebot,$shot,$shot3,$infilt,$bandj,$contr,$toco,$roubo,$forca,$velo,$def,$visao,$clutch,$decisao,$historico,$nome];
-    atualizaCard($data);
 
+    $dataHist=[$nome, $med, $historico]; //jogador elo historico
+
+    insereHistorico($dataHist);
+    atualizaCard($data);
 } else {
     echo "não enviou nada";
 }

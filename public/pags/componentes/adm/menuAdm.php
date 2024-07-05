@@ -25,6 +25,14 @@
                     </span>
                 </a>
             </li>
+            <li class="side-item">
+                <a href="#">
+                    <i class="fa-solid fa-plus-minus"></i>
+                    <span class="item-description">
+                        Novo card
+                    </span>
+                </a>
+            </li>
         </ul>
         <button id="open_btn">
             <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
