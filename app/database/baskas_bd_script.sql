@@ -34,6 +34,7 @@ create table historico(
     elo int not null,
     historico double
 );
+truncate table historico;
 
 insert into bd_baskas.users values(1,"adm","39d5fe4486aba8ee4de086f326c70de9");
 

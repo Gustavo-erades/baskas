@@ -102,11 +102,9 @@ function listaCards()
                     <button class='btn btn-link' id='alterarCard' type='submit' name='salvarAttr' value=<?= $card['nome'] ?>>
                         salvar
                     </button>
-                    <button class='btn btn-link' id='alterarCard' type='submit' name='salvarAttr' value=<?= $card['nome'] ?>>
-                    <a href="../app/funcoes/exibeHistorico.php?jogador=<?=$card['nome']?>">
+                    <button class='btn btn-link' id='button<?= $card['nome'] ?>' type='button' name='salvarAttr' value=<?= $card['nome'] ?> onclick="teste()">
                         histórico
-                    </a>
-                </button>
+                    </button>
                 </div>
             </form>
         </div>
