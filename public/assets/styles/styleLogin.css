@@ -1,0 +1,9 @@
+#inputEye{
+    background-color: #0F1012;
+    color:#ff4218;
+}
+#inputEye:hover{
+    cursor: pointer;
+    background-color: #ff4218;
+    color:#0F1012;
+}

@@ -2,7 +2,7 @@
 function listaCards()
 {
     include_once("../app/database/conexao.php");
-    $sql = "SELECT * FROM bd_baskas.jogadores ORDER BY nome;";
+    $sql = "SELECT * FROM bd_baskas.jogadores WHERE elo>50 ORDER BY nome;";
     $result = mysqli_query($conn, $sql);
     while ($card = mysqli_fetch_array($result)) {
 ?>
@@ -92,7 +92,7 @@ function listaCards()
                                 </div>
                                 <div class="divHistorico">
                                     <label for="hist">hist</label>
-                                    <input type='number' class='inputCard' value=<?= $card['historico'] ?> name='historico' id="hist" style="width:70px;">
+                                    <input type='number' class='inputCard' value=<?= $card['historico'] ?> name='historico' id="hist" style="width:70px;" min=50 step="0.1">
                                 </div>
                             </div>
                         </div>
@@ -102,12 +102,17 @@ function listaCards()
                     <button class='btn btn-link' id='alterarCard' type='submit' name='salvarAttr' value=<?= $card['nome'] ?>>
                         salvar
                     </button>
-                    <button class='btn btn-link' id='button<?= $card['nome'] ?>' type='button' name='salvarAttr' value=<?= $card['nome'] ?> onclick="teste()">
+                    <button class='btn btn-link' id='<?= $card['nome'] ?>' type='button' name='salvarAttr' value=<?= $card['nome'] ?> onclick="apiResponseCards('<?= $card['nome'] ?>')">
                         histórico
                     </button>
                 </div>
             </form>
         </div>
+        <dialog id="responseCard<?= $card['nome'] ?>">
+           <ul id="response<?= $card['nome'] ?>">
+           </ul>
+        </dialog>
+        <script src="./assets/scripts/apiResponseCards.js"></script>
 <?php
     }
 }

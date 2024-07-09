@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="./assets/icones/iconePagina.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="stylesheet" href="./assets/styles/styleLoading.css">
+  <link rel="stylesheet" href="./assets/styles/styleLogin.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
   <script src="./assets/scripts/trocarClasseMenuUser.js" defer></script>
   <title>Baskas-Home</title>
@@ -35,7 +36,8 @@
             <h5 class="card-title">Insira abaixo sua credencial e acesse o painel administrativo</h5>
             <div>
               <form action="../app/helpers/validaLogin.php" method="POST">
-                <div style="margin:20px 0;">
+                <div style="margin:20px 0;" class="input-group">
+                  <button class="input-group-text" id="inputEye" type="button" onclick="openClosedEye()"><i id="iconeEye" class="fa-solid fa-eye-slash"></i></button>
                   <input type="password" class="form-control" width="100%" id="inputCredAdm" style="text-align: center;" name="inputCredAdm" required>
                 </div>
                 <button class="btn" type="submit" id="buttonCredAdm">
@@ -53,4 +55,5 @@
     </div>
   </div>
   <script src="./assets/scripts/loadingPags.js"></script>
+  <script src="./assets/scripts/eyeLogin.js"></script>
 </body>
