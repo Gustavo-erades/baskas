@@ -2,7 +2,7 @@
 function listaCards()
 {
     include_once("../app/database/conexao.php");
-    $sql = "SELECT * FROM bd_baskas.jogadores WHERE elo>50 ORDER BY nome;";
+    $sql = "SELECT * FROM bd_baskas.jogadores WHERE elo>50 ORDER BY elo DESC;";
     $result = mysqli_query($conn, $sql);
     while ($card = mysqli_fetch_array($result)) {
 ?>
