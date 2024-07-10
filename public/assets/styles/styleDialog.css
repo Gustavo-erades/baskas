@@ -1,0 +1,15 @@
+dialog{
+    border-radius:8px;
+    border:none;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:1rem;
+    margin-top:1rem;
+    box-shadow:0 0 1em rgb(0 0 0 / .5);
+    margin-left:25vh;
+    margin-top:25vh;
+}
+thead, tbody,dialog div{
+    text-align: center;
+}

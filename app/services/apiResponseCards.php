@@ -3,7 +3,7 @@
     header('Content-Type: application/json');
     $return=Array();
     $sql='
-        SELECT jogador,dia,historico FROM bd_baskas.historico WHERE jogador=?; 
+        SELECT jogador,dia,historico FROM bd_baskas.historico WHERE jogador=? ORDER BY dia; 
     ';
     $nome=$_POST['jogador'];
     $stmt=mysqli_prepare($conn,$sql);

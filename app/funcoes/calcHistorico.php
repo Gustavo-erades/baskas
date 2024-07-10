@@ -15,6 +15,7 @@ function calcHistorico($jogador)
     while ($dados = mysqli_fetch_array($result2)) {
         $val= $val+intval($dados['historico']);
     }
-    $med=round($val/$quant,2);
+    $med=round($val/$quant);
+    echo $med;
     return  $med;
 }
