@@ -108,11 +108,34 @@ function listaCards()
                 </div>
             </form>
         </div>
-        <dialog id="responseCard<?= $card['nome'] ?>">
-           <ul id="response<?= $card['nome'] ?>">
-           </ul>
-        </dialog>
+        <div id="divDialog">
+
+            <dialog id="responseCard<?= $card['nome'] ?>" class="bg-dark" style="border-radius:8px;border:none;padding-right:5px;padding-top:5px;padding-bottom:5px;margin-left:1rem;margin-top:1rem;box-shadow:0 0 1em rgb(0 0 0 / .5);margin-left:25vh;margin-top:25vh;">
+                <table class="table table-dark table-hover">
+                    <thead style="text-align:center">
+                        <th>Histórico</th>
+                        <th>Data</th>
+                    </thead>
+                    <tbody id="response<?= $card['nome'] ?>" style="text-align:center">
+                    </tbody>
+                </table>
+                <div style="text-align:center">
+                    <button type="button" class="btn btn-link" onclick="fecharModal()" value="<?=$card['nome']?>" id="nome">
+                        <a>fechar</a>
+                    </button>
+                </div>
+            </dialog>
+        </div>
         <script src="./assets/scripts/apiResponseCards.js"></script>
+        <script>
+            function fecharModal() {
+                const nome=document.querySelector("#nome").value;
+                console.log(nome)
+                const dialogResponse = document.querySelector('#responseCard' + nome);
+                console.log(dialogResponse)
+                dialogResponse.close();
+            }
+        </script>
 <?php
     }
 }

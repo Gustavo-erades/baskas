@@ -5,8 +5,8 @@ function apiResponseCards(jogador) {
     xhr.onload = function () {
         if (xhr.status >= 200 && xhr.status < 400) {
             var data = JSON.parse(xhr.responseText);
-            const dialogResponse = document.querySelector('#responseCard'+data[0]['jogador']);
-            dialogResponse.innerHTML='';
+            const ulResponse = document.querySelector('#response'+data[0]['jogador']);
+            ulResponse.innerHTML='';
             mostrarDados(data);
         } else {
             console.error('Erro ao carregar dados: ' + xhr.statusText);
@@ -20,16 +20,19 @@ function apiResponseCards(jogador) {
 function mostrarDados(data) {
     const dialogResponse = document.querySelector('#responseCard'+data[0]['jogador']);
     data.forEach(function (item) {
-        const ulResponse=document.createElement("ul");
-        dialogResponse.append(ulResponse);
+        const ulResponse=document.querySelector('#response'+item.jogador);
         if ('erro' in item) {
             console.log(item.erro);
         } else {
             dia=formatarDataBrasileira(new Date(item.dia))
             console.log('jogador: ' + item.jogador + ', dia: ' + dia + ', historico: ' + item.historico);
-            const li=document.createElement('li');
-            li.textContent=item.historico+'  '+dia;
-            li.style.color="#000";
+            const li=document.createElement('tr');
+            const td1=document.createElement('td');
+            const td2=document.createElement('td');
+            td1.textContent=item.historico;
+            td2.textContent=dia;
+            li.appendChild(td1);
+            li.appendChild(td2);
             ulResponse.appendChild(li);
         }
     });
