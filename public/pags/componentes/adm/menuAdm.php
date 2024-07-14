@@ -1,7 +1,7 @@
 <nav id="sidebar">
     <div id="sidebar_content">
         <ul id="side_items">
-            <li class="side-item active">
+            <li class="side-item" id="navCards">
                 <a href="<?=$_SERVER["PHP_SELF"]."?cod=adm-0"?>">
                     <i class="fa-regular fa-address-card"></i>
                     <span class="item-description">
@@ -9,7 +9,7 @@
                     </span>
                 </a>
             </li>
-            <li class="side-item">
+            <li class="side-item" id="navTitulos">
                 <a href="<?=$_SERVER["PHP_SELF"]."?cod=adm-1"?>">
                     <i class="fa-solid fa-trophy"></i>
                     <span class="item-description">
@@ -49,3 +49,4 @@
         </button>
     </div>
 </nav>
+<script src="./assets/scripts/consultaMenu.js"></script>

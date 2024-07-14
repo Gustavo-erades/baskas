@@ -7,9 +7,9 @@ include_once("./pags/componentes/adm/resultVotacao/votBagre.php");
 
 ?>
 <h2>Títulos do mês</h2>
+<hr>
 <?php
 include_once("./pags/componentes/adm/titulosMes/mvpMes.php");
 include_once("./pags/componentes/adm/titulosMes/mipMes.php");
 include_once("./pags/componentes/adm/titulosMes/bagreMes.php");
 ?>
-<hr>
