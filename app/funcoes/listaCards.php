@@ -22,64 +22,64 @@ function listaCards()
                                 <ul class='ulAttr'>
                                     <li class='liAttr'>
                                         <h6>Passe</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['passe'] ?> required name='passe'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['passe'] ?> required name='passe'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Rebot</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['rebot'] ?> required name='rebot'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['rebot'] ?> required name='rebot'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Shot</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['shot'] ?> required name='shot'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['shot'] ?> required name='shot'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Shot 3</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['shot3'] ?> required name='shot3'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['shot3'] ?> required name='shot3'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Infilt</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['infilt'] ?> required name='infilt'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['infilt'] ?> required name='infilt'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Bandj</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['bandj'] ?> required name='bandj'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['bandj'] ?> required name='bandj'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Contr</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['contr'] ?> required name='contr'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['contr'] ?> required name='contr'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Toco</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['toco'] ?> required name='toco'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['toco'] ?> required name='toco'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Roubo</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['roubo'] ?> required name='roubo'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['roubo'] ?> required name='roubo'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Força</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['forca'] ?> required name='forca'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['forca'] ?> required name='forca'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Velo</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['velo'] ?> required name='velo'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['velo'] ?> required name='velo'>
                                     </li>
                                     <li class='liAttr'>
                                         <h6>Def</h6>
-                                        <input type='number' min=50 max=100 class='inputCard' value=<?= $card['def'] ?> required name='def'>
+                                        <input type='number' min=50 max=99 class='inputCard' value=<?= $card['def'] ?> required name='def'>
                                     </li>
                                 </ul>
                                 <hr>
                                 <div class='row'>
                                     <ul class='col-12 col-lg-6 ulAttr attrFinais'>
                                         <li>Visão <br>
-                                            <input type='number' min=50 max=100 class='inputCard' value=<?= $card['visao'] ?> required name='visao'>
+                                            <input type='number' min=50 max=99 class='inputCard' value=<?= $card['visao'] ?> required name='visao'>
                                         </li>
                                         <li>Clutch <br>
-                                            <input type='number' min=50 max=100 class='inputCard' value=<?= $card['clutch'] ?> required name='clutch'>
+                                            <input type='number' min=50 max=99 class='inputCard' value=<?= $card['clutch'] ?> required name='clutch'>
                                         </li>
                                         <li>Decisão <br>
-                                            <input type='number' min=50 max=100 class='inputCard' value=<?= $card['decisao'] ?> required name='decisao'>
+                                            <input type='number' min=50 max=99 class='inputCard' value=<?= $card['decisao'] ?> required name='decisao'>
                                         </li>
                                     </ul>
                                     <div class='col-12 col-lg-6 divEloCard'>
@@ -104,6 +104,9 @@ function listaCards()
                     </button>
                     <button class='btn btn-link' id='<?= $card['nome'] ?>' type='button' name='salvarAttr' value=<?= $card['nome'] ?> onclick="apiResponseCards('<?= $card['nome'] ?>')">
                         histórico
+                    </button>
+                    <button class='btn btn-link' type='button'>
+                        títulos
                     </button>
                 </div>
             </form>

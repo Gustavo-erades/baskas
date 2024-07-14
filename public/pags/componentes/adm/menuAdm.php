@@ -2,7 +2,7 @@
     <div id="sidebar_content">
         <ul id="side_items">
             <li class="side-item active">
-                <a href="#">
+                <a href="<?=$_SERVER["PHP_SELF"]."?cod=adm-0"?>">
                     <i class="fa-regular fa-address-card"></i>
                     <span class="item-description">
                         Cards
@@ -10,7 +10,7 @@
                 </a>
             </li>
             <li class="side-item">
-                <a href="#">
+                <a href="<?=$_SERVER["PHP_SELF"]."?cod=adm-1"?>">
                     <i class="fa-solid fa-trophy"></i>
                     <span class="item-description">
                         Títulos
@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="side-item">
-                <a href="#">
+                <a href="<?=$_SERVER["PHP_SELF"]."?cod=adm-2"?>">
                     <i class="fa-regular fa-hand-point-up"></i>
                     <span class="item-description">
                         Votações
@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li class="side-item">
-                <a href="#">
+                <a href="<?=$_SERVER["PHP_SELF"]."?cod=adm-3"?>">
                     <i class="fa-solid fa-plus-minus"></i>
                     <span class="item-description">
                         Novo card

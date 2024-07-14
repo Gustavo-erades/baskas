@@ -10,6 +10,9 @@ if(isset($_GET['cod']));
         case 'adm-0':
             $load=$_SESSION["path"]."componentes/adm/loading.html";
         break;
+        case 'adm-1':
+            $load=$_SESSION["path"]."componentes/adm/loading.html";
+        break;
         default:
             $load=$_SESSION["path"]."componentes/users/loading.html";
         break;
