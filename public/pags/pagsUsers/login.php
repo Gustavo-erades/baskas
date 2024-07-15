@@ -25,6 +25,7 @@
       //titulo
       include_once("./pags/componentes/titulo.html");
       ?>
+      <p class="text-danger text-center" id="erroLogin">Credencial incorreta, tente novamente.</p>
       <p>administração</p>
       <!-- credenciais -->
       <div id="votacoes">
