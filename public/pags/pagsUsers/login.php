@@ -24,8 +24,10 @@
       <?php
       //titulo
       include_once("./pags/componentes/titulo.html");
+      if(isset($_SESSION["senhaErrada"])&&$_SESSION["senhaErrada"]===true){
+        echo "<p class='text-danger text-center' id='erroLogin'>Credencial incorreta, tente novamente.</p>";
+      }
       ?>
-      <p class="text-danger text-center" id="erroLogin">Credencial incorreta, tente novamente.</p>
       <p>administração</p>
       <!-- credenciais -->
       <div id="votacoes">

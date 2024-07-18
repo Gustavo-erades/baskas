@@ -6,7 +6,7 @@
         <div class="card-body">
             <h5 class="card-title">Quem merece o título de MVP do mês de junho?</h5>
             <div>
-                <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                <select class="form-select form-select-md mb-3">
                     <option>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>

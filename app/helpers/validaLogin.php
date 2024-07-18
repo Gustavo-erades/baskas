@@ -4,12 +4,16 @@
         $sql="SELECT * FROM users WHERE senha='".md5($_POST['inputCredAdm'])."'";
         $result=mysqli_query($conn,$sql);
         mysqli_close($conn);
+        session_start();
         if(mysqli_num_rows($result)>0){
-            session_start();
             $_SESSION["logado"]=true;
+            $_SESSION['senhaErrada']=false;
             header("Location:../../public/index.php?cod=adm-0");
         }else{
+            $_SESSION["senhaErrada"]=true;
+            $_SESSION["logado"]=false;
             header("Location:../../public/index.php?cod=user-1");
+            
         }
     }
     

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,25 +28,24 @@
       //baskas dessa semana
       include_once("./pags/componentes/titulosSemana/titulosSemana.html");
       //mvps
-      include_once("./pags/componentes/titulosMes/mvpMes.html");
+      //include_once("./pags/componentes/titulosMes/mvpMes.html");
       //evolucao
-      include_once("./pags/componentes/titulosMes/evolucaoMes.html");
+      //include_once("./pags/componentes/titulosMes/evolucaoMes.html");
       //bagre
-      include_once("./pags/componentes/titulosMes/bagreMes.html");
+      //include_once("./pags/componentes/titulosMes/bagreMes.html");
       ?>
 
       <!-- votações -->
       <div id="votacoes">
-        <h2>Votações abertas</h2>
+        <h2>Votação aberta</h2>
         <div class="card">
           <div class="card-header">
-            MVP do mês
+            Títulos da semana
           </div>
           <div class="card-body">
-            <h5 class="card-title">Quem merece o título de MVP do mês de junho?</h5>
-            <p class="card-text">Considerando todos os jogos que tivemos neste mês, acesse a pesquisa abaixo e vote no
-              melhor jogador na sua opnião</p>
-            <a href="#" class="btn">Acessar votação</a>
+            <h5 class="card-title">Quem merece os títulos de MVP, MIP e Bagre dessa semana?</h5>
+            <p class="card-text">Considerando todos os últimos jogos, acesse a pesquisa abaixo e deixe sua opnião</p>
+            <a href="<?=$_SERVER["PHP_SELF"]."?cod=user-2"?>" class="btn">Acessar votação</a>
           </div>
         </div>
       </div>

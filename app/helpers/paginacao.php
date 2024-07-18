@@ -7,6 +7,9 @@
         case 'user-1':
             $conteudo=$_SESSION["path"]."pagsUsers/login.php";
         break;
+        case 'user-2':
+            $conteudo=$_SESSION["path"]."pagsUsers/votacoes.php";
+        break;
         case 'adm-0':
             if(isset($_SESSION["logado"])){
                 $conteudo=$_SESSION["path"]."pagsAdm/admHome.php";

@@ -25,7 +25,6 @@
         <main id="mainContent">
             <div class="container">
                 <?php 
-                    include_once("./pags/componentes/titulosSemana/titulosSemana.html");
                     include_once("./pags/componentes/adm/lancaTitulo.php"); 
                 ?>
             </div>
