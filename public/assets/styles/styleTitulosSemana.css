@@ -1,0 +1,25 @@
+#divCardsSemana{
+    height:60vh
+  }
+  #slideTitulos,
+  #slideTitulosButton {
+    display: none;
+  }
+
+  #slideTitulosButton button {
+    margin-top: 30vh;
+  }
+  #slideTitulos .card, #slideTitulosButton .card{
+    font-size: 1.3em;
+  }
+  @media (max-width: 992px) {
+
+    #slideTitulos,
+    #slideTitulosButton {
+      display: block;
+    }
+
+    #titulosTelaGrande {
+      display: none;
+    }
+  }
