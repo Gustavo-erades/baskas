@@ -1,0 +1,21 @@
+div.container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+div#votacoes{
+    width: 100%;
+}
+div.card{
+    box-shadow: 6px 6px 8px #000000fe;
+}
+button.btn{
+    margin-top: 15px;
+    color: #ff2f00;
+    background-color: #0F1012;
+    font-weight: bold;
+}
+button.btn:hover{
+    color:#0F1012;
+    background-color: #ff2f00;
+}

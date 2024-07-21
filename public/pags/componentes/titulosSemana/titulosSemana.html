@@ -1,34 +1,114 @@
-<div>
+<style>
+  #slideTitulos,
+  #slideTitulosButton {
+    display: none;
+  }
+
+  #slideTitulosButton button {
+    margin-top: 100px;
+  }
+  #slideTitulos .card, #slideTitulosButton .card{
+    font-size: 1.3em;
+  }
+  @media (max-width: 992px) {
+
+    #slideTitulos,
+    #slideTitulosButton {
+      display: block;
+    }
+
+    #titulosTelaGrande {
+      display: none;
+    }
+  }
+</style>
+<div style="height:60vh">
   <h2>Nessa semana do baskas</h2>
   <hr>
   <div class="baskasSemana">
-    <div class="row">
+    <div class="row" id="titulosTelaGrande">
       <!-- mvp da semana -->
       <div class="card text-light" style="background-color: #ff7707;">
         <img src="./assets/images/imgTeste.jpeg" class="card-img-top image-fluid rounded-top" width="100%" alt="...">
         <div class="card-body">
-          <h3>MVP 00/00/00</h3>
-          <p class="card-text">esse foi o melhor jogador da quadra, mereceu o título de <b>MVP</b>! Parabéns
+          <h3><b>MVP</b></h3>
+          <p class="card-text">esse foi o melhor jogador da quadra! Parabéns
             <b>NOME</b>
           </p>
+          <p class="card-text">jogo do dia  00/00/00</p>
         </div>
       </div>
       <!-- quem surpreendeu-->
       <div class="card bg-primary text-light" id="card-margin">
         <img src="./assets/images/imgTeste.jpeg" class="card-img-top image-fluid rounded-top" width="100%" alt="...">
         <div class="card-body">
-          <h3>MIP 00/00/00</h3>
-          <p class="card-text">Esse foi o jogador que mais surpeendeu! Parabéns <b>NOME</b></p>
+          <h3><b>MIP</b></h3>
+          <p class="card-text">Esse foi quem mais surpeendeu! Parabéns <b>NOME</b></p>
+          <p class="card-text">jogo do dia  00/00/00</p>
         </div>
       </div>
       <!--bagre da semana-->
       <div class="card bg-danger text-light">
         <img src="./assets/images/imgTeste.jpeg" class="card-img-top image-fluid rounded-top" width="100%" alt="...">
         <div class="card-body">
-          <h3>Bagre 00/00/00</h3>
+          <h3><b>Bagre</b></h3>
           <p class="card-text"><b>NOME</b> jogou abaixo do que está acostumado...</p>
+          <p class="card-text">jogo do dia  00/00/00</p>
         </div>
       </div>
+    </div>
+
+    <div id="slideTitulos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- mvp da semana -->
+          <div class="card text-light" style="background-color: #ff7707;">
+            <img src="./assets/images/imgTeste.jpeg" class="card-img-top image-fluid rounded-top" width="100%"
+              alt="...">
+            <div class="card-body">
+              <h3><b>MVP</b></h3>
+              <p class="card-text">esse foi o melhor jogador da quadra! Parabéns
+                <b>NOME</b>
+              </p>
+              <p class="card-text">jogo do dia  00/00/00</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+         <!--MIP da semana-->
+         <div class="card bg-primary text-light">
+          <img src="./assets/images/imgTeste.jpeg" class="card-img-top image-fluid rounded-top" width="100%"
+            alt="...">
+          <div class="card-body">
+            <h3><b>MIP</b></h3>
+            <p class="card-text">Esse foi o jogador que mais surpeendeu! Parabéns <b>NOME</b></p>
+            <p class="card-text">jogo do dia  00/00/00</p>
+          </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <!--bagre da semana-->
+          <div class="card bg-danger text-light">
+            <img src="./assets/images/imgTeste.jpeg" class="card-img-top image-fluid rounded-top" width="100%"
+              alt="...">
+            <div class="card-body">
+              <h3><b>Bagre</b></h3>
+              <p class="card-text"><b>NOME</b> jogou abaixo do que está acostumado...</p>
+              <p class="card-text">jogo do dia  00/00/00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="slideTitulosButton">
+      <button class="carousel-control-prev" type="button" data-bs-target="#slideTitulos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slideTitulos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 </div>
