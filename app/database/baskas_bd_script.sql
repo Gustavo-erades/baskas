@@ -34,6 +34,21 @@ create table historico(
     elo int not null,
     historico double
 );
+create table votacao(
+	id int not null primary key,
+    nome varchar(30) not null,
+    dia datetime not null,
+    mvp varchar(30),
+    mip varchar(30),
+    bagre varchar(30)
+);
+create table titulo(
+	id int not null primary key,
+    titulo varchar(10) not null,
+    nome varchar(30) not null,
+    dia datetime not null
+);
+
 truncate table historico;
 
 insert into bd_baskas.users values(1,"adm","39d5fe4486aba8ee4de086f326c70de9");
