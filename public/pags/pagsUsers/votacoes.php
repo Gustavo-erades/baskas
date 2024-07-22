@@ -22,7 +22,7 @@
                     <div class="card-header">
                         votação jogo dia 00/00/00
                     </div>
-                    <form class="card-body">
+                    <div class="card-body">
                         <div>
                             <h5 class="card-title">Quem merece o título de MVP</h5>
                             <div>
@@ -48,7 +48,7 @@
                             <h5 class="card-title">Nome</h5>
                             <input type="text" name="" id="" class="form-control">
                         </div>
-                    </form>
+                    </div>
                     <button class="btn">
                         Enviar
                     </button>

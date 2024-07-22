@@ -19,12 +19,10 @@
     scale:1.05;
   }
   @media (max-width: 992px) {
-
     #slideTitulos,
     #slideTitulosButton {
       display: block;
     }
-
     #titulosTelaGrande {
       display: none;
     }
