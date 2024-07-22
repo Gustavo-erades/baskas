@@ -17,7 +17,7 @@
                     </span>
                 </a>
             </li>
-            <li class="side-item">
+            <li class="side-item" id="navVotacoes">
                 <a href="<?=$_SERVER["PHP_SELF"]."?cod=adm-2"?>">
                     <i class="fa-regular fa-hand-point-up"></i>
                     <span class="item-description">

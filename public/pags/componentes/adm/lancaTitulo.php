@@ -1,6 +1,7 @@
 <h2>Títulos da semana</h2>
 <hr>
-<?php/*
+<?php
+/*
 include_once("./pags/componentes/adm/resultVotacao/votMvp.php");
 include_once("./pags/componentes/adm/resultVotacao/votMip.php");
 include_once("./pags/componentes/adm/resultVotacao/votBagre.php");
