@@ -14,7 +14,7 @@
     <script src="./assets/scripts/loading.js" defer></script>
     <title>Baskas-Votacoes</title>
 </head>
-<body onload="apiResponseVotNomes('criarOptions')">
+<body>
     <div id="conteudoPag">
         <div class="container">
             <div id="votacoes">
@@ -55,7 +55,6 @@
                 </div>
             </div>
         </div>
-       
     </div>
     <script src="./assets/scripts/loadingPags.js"></script>
     <script src="./assets/scripts/apiResponseVotNomes.js"></script>

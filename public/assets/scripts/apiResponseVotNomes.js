@@ -1,4 +1,4 @@
-function apiResponseVotNomes(teste) {
+document.addEventListener('DOMContentLoaded',function(api){
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '../app/services/apiResponseVotNomes.php', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -15,8 +15,8 @@ function apiResponseVotNomes(teste) {
     xhr.onerror = function () {
         console.error('Erro de rede ao tentar carregar dados.');
     };
-    xhr.send('teste=' + encodeURIComponent(teste));
-}
+    xhr.send('teste=' + encodeURIComponent(api));
+});
 function criaOptionsMvp(data){
     const selectMvp=document.querySelector("#selectVotMvp");
     data.forEach(element => {
