@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="./assets/styles/styleLoading.css">
     <link rel="stylesheet" href="./assets/styles/styleVotUser.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <script src="./assets/scripts/trocarClasseMenuUser.js" defer></script>
     <script src="./assets/scripts/loading.js" defer></script>
     <title>Baskas-Votacoes</title>
 </head>
-<body>
+<body onload="apiResponseVotNomes('criarOptions')">
     <div id="conteudoPag">
         <div class="container">
             <div id="votacoes">
@@ -27,33 +26,21 @@
                         <div>
                             <h5 class="card-title">Quem merece o título de MVP</h5>
                             <div>
-                                <select class="form-select form-select-md mb-3">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select form-select-md mb-3" id="selectVotMvp">
                                 </select>
                             </div>
                         </div>
                         <div>
                             <h5 class="card-title">Quem merece o título de MIP</h5>
                             <div>
-                                <select class="form-select form-select-md mb-3">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select form-select-md mb-3" id="selectVotMip">
                                 </select>
                             </div>
                         </div>
                         <div>
                             <h5 class="card-title">Quem merece o título de Bagre</h5>
                             <div>
-                                <select class="form-select form-select-md mb-3">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="form-select form-select-md mb-3" id="selectVotBagre">
                                 </select>
                             </div>
                         </div>
@@ -61,15 +48,17 @@
                             <h5 class="card-title">Nome</h5>
                             <input type="text" name="" id="" class="form-control">
                         </div>
-                        <button class="btn">
-                            enviar
-                        </button>
                     </form>
+                    <button class="btn">
+                        Enviar
+                    </button>
                 </div>
             </div>
         </div>
+       
     </div>
     <script src="./assets/scripts/loadingPags.js"></script>
+    <script src="./assets/scripts/apiResponseVotNomes.js"></script>
 </body>
 
 </html>
