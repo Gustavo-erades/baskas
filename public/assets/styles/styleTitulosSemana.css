@@ -12,6 +12,12 @@
   #slideTitulos .card, #slideTitulosButton .card{
     font-size: 1.3em;
   }
+  #titulosTelaGrande:hover div.card:not(:hover){
+    opacity:0.35;
+  }
+  #titulosTelaGrande div.card:hover{
+    scale:1.05;
+  }
   @media (max-width: 992px) {
 
     #slideTitulos,
