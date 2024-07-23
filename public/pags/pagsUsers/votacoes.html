@@ -27,6 +27,7 @@
                             <h5 class="card-title">Quem merece o título de MVP</h5>
                             <div>
                                 <select class="form-select form-select-md mb-3" id="selectVotMvp">
+                                    <option value="" data-default disabled selected></option>
                                 </select>
                             </div>
                         </div>
@@ -34,6 +35,7 @@
                             <h5 class="card-title">Quem merece o título de MIP</h5>
                             <div>
                                 <select class="form-select form-select-md mb-3" id="selectVotMip">
+                                    <option value="" data-default disabled selected></option>
                                 </select>
                             </div>
                         </div>
@@ -41,15 +43,16 @@
                             <h5 class="card-title">Quem merece o título de Bagre</h5>
                             <div>
                                 <select class="form-select form-select-md mb-3" id="selectVotBagre">
+                                    <option value="" data-default disabled selected></option>
                                 </select>
                             </div>
                         </div>
                         <div>
                             <h5 class="card-title">Nome</h5>
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="nomeVot" id="nomeVot" class="form-control">
                         </div>
                     </div>
-                    <button class="btn">
+                    <button class="btn" onclick="verificaDados()">
                         Enviar
                     </button>
                 </div>
@@ -58,6 +61,7 @@
     </div>
     <script src="./assets/scripts/loadingPags.js"></script>
     <script src="./assets/scripts/apiResponseVotNomes.js"></script>
+    <script src="./assets/scripts/apiEnviaVot.js"></script>
 </body>
 
 </html>

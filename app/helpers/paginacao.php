@@ -8,7 +8,7 @@
             $conteudo=$_SESSION["path"]."pagsUsers/login.php";
         break;
         case 'user-2':
-            $conteudo=$_SESSION["path"]."pagsUsers/votacoes.php";
+            $conteudo=$_SESSION["path"]."pagsUsers/votacoes.html";
         break;
         case 'adm-0':
             if(isset($_SESSION["logado"])){

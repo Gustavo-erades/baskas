@@ -44,7 +44,7 @@ function criaOptionsMip(data){
     });
 }
 function criaOptionsBagre(data){
-    const selectBcriaOptionsBagre=document.querySelector("#selectVotBagre");
+    const selectBagre=document.querySelector("#selectVotBagre");
     data.forEach(element => {
         if('erro' in element){
             console.log(element.erro);
@@ -52,7 +52,7 @@ function criaOptionsBagre(data){
             var option=document.createElement("option");
             option.textContent=element.nome;
             option.value=element.nome;
-            selectBcriaOptionsBagre.appendChild(option);
+            selectBagre.appendChild(option);
         }
     });
 }
