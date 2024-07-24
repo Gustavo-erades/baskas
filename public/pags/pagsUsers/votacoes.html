@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./assets/icones/iconePagina.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/styleLoading.css">
-    <link rel="stylesheet" href="./assets/styles/styleVotUser.css">
+    <link rel="stylesheet" href="./assets/styles/styleVotUsers.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <script src="./assets/scripts/loadingPags.js" defer></script>
     <title>Baskas-Votacoes</title>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="card-body">
                         <div>
-                            <h5 class="card-title">Quem merece o título de MVP</h5>
+                            <h5 class="card-title">Quem merece o título de MVP <span id="obrigatorioVot">*</span> </h5>
                             <div>
                                 <select class="form-select form-select-md mb-3" id="selectVotMvp">
                                     <option value="" data-default disabled selected></option>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div>
-                            <h5 class="card-title">Quem merece o título de MIP</h5>
+                            <h5 class="card-title">Quem merece o título de MIP <span id="obrigatorioVot">*</span></h5>
                             <div>
                                 <select class="form-select form-select-md mb-3" id="selectVotMip">
                                     <option value="" data-default disabled selected></option>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div>
-                            <h5 class="card-title">Nome</h5>
+                            <h5 class="card-title">Nome <span id="obrigatorioVot">*</span></h5>
                             <input type="text" name="nomeVot" id="nomeVot" class="form-control">
                         </div>
                     </div>

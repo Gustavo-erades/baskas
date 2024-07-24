@@ -26,7 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['voto'])) {
         if ($result === false) {
             echo 'Erro na execução da declaração SQL: ' . mysqli_stmt_error($stmt);
         } else {
-            echo 'Dados inseridos com sucesso.';
+            session_start();
+            echo "voto cadastrado com sucesso!";
+            $_SESSION['votoContabilizado']=true;
         }
         mysqli_stmt_close($stmt);
     }

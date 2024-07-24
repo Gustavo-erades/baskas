@@ -19,3 +19,6 @@ button.btn:hover{
     color:#0F1012;
     background-color: #ff2f00;
 }
+span#obrigatorioVot{
+    color: #ff2f00;
+}
