@@ -36,5 +36,4 @@
     <script src="./assets/scripts/sideBarAdm.js"></script>
     <script src="./assets/scripts/loadingPags.js"></script>
 </body>
-
 </html>

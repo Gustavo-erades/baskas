@@ -24,13 +24,6 @@
                 $conteudo=$_SESSION["path"]."erro404.html";
             }
         break;
-        case 'adm-2':
-            if(isset($_SESSION["logado"])){
-                $conteudo=$_SESSION["path"]."pagsAdm/admVotacoes.php";
-            }else{
-                $conteudo=$_SESSION["path"]."erro404.html";
-            }
-        break;
         default:
             $conteudo=$_SESSION["path"]."erro404.html";
         break;
