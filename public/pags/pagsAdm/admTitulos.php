@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/styles/styleAlterarCards.css">
     <link rel="stylesheet" href="./assets/styles/styleLoading.css">
     <link rel="stylesheet" href="./assets/styles/styleAdm.css">
+    <link rel="stylesheet" href="./assets/styles/styleVotAdm.css">
     <link rel="shortcut icon" href="./assets/icones/iconePagina.png" type="image/x-icon">
     <title>Baskas-Painel administrativo</title>
 </head>
