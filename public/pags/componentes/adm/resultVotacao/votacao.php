@@ -1,16 +1,17 @@
 <a class="btn" id="lancarVotacao">
     Lançar votação
 </a>
+<script src="./assets/scripts/apiResponseVot.js"></script>
 <div>
     <h3 id="contagemVotos">
-        <span id="numVotos">99</span> votos
+        <span id="numVotos"></span> votos
     </h3>
     <!-- mvp -->
     <div class="divVotTitulo">
         <span id="votTitulo">
             <h3>MVP</h3>
         </span>
-        <h4>mais votado (99) : nome</h4>
+        <h4>mais votado (<span id="quantVotMvp"></span>) : <span id="nomeVotMvp">nome</span></h4>
         <button class="btn btn-link">mais votos</button>
     </div>
     <!-- mip -->
@@ -18,7 +19,7 @@
         <span id="votTitulo">
             <h3>MIP</h3>
         </span>
-        <h4>mais votado (99) : nome</h4>
+        <h4>mais votado (<span id="quantVotMip"></span>) : <span id="nomeVotMip">nome</span></h4>
         <button class="btn btn-link">mais votos</button>
     </div>
     <!-- Bagre -->
@@ -26,7 +27,7 @@
         <span id="votTitulo">
             <h3>Bagre</h3>
         </span>
-        <h4>mais votado (99) : nome</h4>
+        <h4>mais votado (<span id="quantVotBagre"></span>) : <span id="nomeVotBagre">nome</span></h4>
         <button class="btn btn-link">mais votos</button>
     </div>
 </div>

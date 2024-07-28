@@ -5,7 +5,7 @@ $return = array();
 $sql = '
         SELECT nome FROM bd_baskas.jogadores ORDER BY nome ASC; 
     ';
-$teste=$_POST['teste'];
+$hist=$_POST['hist'];
 $stmt = mysqli_prepare($conn, $sql);
 if ($stmt === false) {
     die('Erro na preparação da declaração SQL (apiResponseVotNomes)' . mysqli_error($conn));

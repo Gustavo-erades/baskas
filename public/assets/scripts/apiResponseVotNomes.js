@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded',function(api){
     xhr.onerror = function () {
         console.error('Erro de rede ao tentar carregar dados.');
     };
-    xhr.send('teste=' + encodeURIComponent(api));
+    xhr.send('hist=' + encodeURIComponent(api));
 });
 function criaOptionsMvp(data){
     const selectMvp=document.querySelector("#selectVotMvp");
