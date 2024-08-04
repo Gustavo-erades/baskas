@@ -108,6 +108,9 @@ function listaCardsAdm()
                     <button class='btn btn-link' type='button' onclick="apiTituloCards('<?= $card['nome'] ?>')">
                         títulos
                     </button>
+                    <button class='btn btn-link' type='button' onclick="apiTituloCards('<?= $card['nome'] ?>')">
+                        evolução
+                    </button>
                 </div>
             </form>
         </div>
