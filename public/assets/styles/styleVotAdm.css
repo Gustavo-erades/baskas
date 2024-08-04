@@ -33,7 +33,10 @@ body {
     margin-top: 20px;
     margin-bottom: 20px
 }
-
+#diaVotos {
+    margin-top:20px;
+    margin-bottom: 40px;
+}
 .divVotTitulo {
     margin-bottom: 20px;
 }

@@ -2,9 +2,11 @@
     Lançar votação
 </a>
 <div>
+    <h3 id="diaVotos">
+        <span id="dia"></span>
+    </h3>
     <h3 id="contagemVotos">
         <span id="numVotos"></span> votos
-        <span id="dia">04/08/2024</span>
     </h3>
     <!-- mvp -->
     <div class="divVotTitulo">
@@ -83,5 +85,6 @@
 </div>
 <link rel="stylesheet" href="./assets/styles/styleDialog.css">
 <script src="./assets/scripts/apiResponseVot.js"></script>
+<script src="./assets/scripts/apiResponseDiaVot.js"></script>
 <script src="./assets/scripts/apiResponseVotDialog2.js"></script>
 <script src="./assets/scripts/fecharModal.js"></script>
