@@ -23,7 +23,12 @@ body {
     background-color: #ff2f00;
     font-weight: bold;
 }
-
+#dia {
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #ff2f00;
+    font-weight: bold;
+}
 #contagemVotos {
     margin-top: 20px;
     margin-bottom: 20px

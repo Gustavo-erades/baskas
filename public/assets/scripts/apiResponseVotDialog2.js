@@ -1,6 +1,5 @@
 function apiResponseVotDialog(elemento){
     const idDoBotao = elemento.id;
-    console.log(idDoBotao)
     const modal=document.querySelector("#dialogVot"+idDoBotao+"")
     modal.showModal();
     var xhr = new XMLHttpRequest();
@@ -19,9 +18,8 @@ function apiResponseVotDialog(elemento){
     xhr.onerror = function () {
         console.error('Erro de rede ao tentar carregar dados.');
     };
-    const teste='votTitulo=' + encodeURIComponent(idDoBotao)
-    console.log(teste)
-    xhr.send(teste);
+    const enviaDadoApi='votTitulo=' + encodeURIComponent(idDoBotao)
+    xhr.send(enviaDadoApi);
 }
 function mostrarDados(data,elementoPai) {
     data.forEach(function (item) {

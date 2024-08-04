@@ -4,6 +4,7 @@
 <div>
     <h3 id="contagemVotos">
         <span id="numVotos"></span> votos
+        <span id="dia">04/08/2024</span>
     </h3>
     <!-- mvp -->
     <div class="divVotTitulo">

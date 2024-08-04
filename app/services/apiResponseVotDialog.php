@@ -2,12 +2,12 @@
 require_once("../database/conexao.php");
 header('Content-Type: application/json');
 $return = array();
-//$votTitulo=strtolower($_POST['votTitulo']);
+$votTitulo=strtolower($_POST['votTitulo']);
 //echo $votTitulo;
 $sql = '
-        SELECT mvp AS nomeVotMvp, COUNT(*) AS quantVotMvp
+        SELECT '.$votTitulo.' AS nomeVotMvp, COUNT(*) AS quantVotMvp
         FROM bd_baskas.votacao
-        GROUP BY mvp
+        GROUP BY '.$votTitulo.'
         ORDER BY quantVotMvp DESC; 
     ';
 $stmt = mysqli_prepare($conn, $sql);
@@ -24,7 +24,6 @@ if ($result === false) {
         while ($row = mysqli_fetch_assoc($resultSql)) {
             $return[] = $row;
         }
-        echo var_dump($_POST);
     } else {
         $return[] = array('erro' => 'nenhum voto até o momento.');
     }
