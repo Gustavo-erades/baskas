@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded',function(api){
     xhr.onload = function () {
         if (xhr.status >= 200 && xhr.status < 400) {
             var data = JSON.parse(xhr.responseText);
-            console.log(data)
             insereDiaVot(data);
         } else {
             console.error('Erro ao carregar dados: ' + xhr.statusText);
