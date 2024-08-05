@@ -132,24 +132,6 @@ function listaCardsAdm()
                 </div>
             </dialog>
         </div>
-        <!-- títulos 
-        <div id="divDialogTitulo">
-            <dialog id="responseCardTitulo<?= $card['nome'] ?>" class="bg-dark">
-                <table class="table table-dark table-hover">
-                    <thead>
-                        <th>Títulos</th>
-                        <th>Data</th>
-                    </thead>
-                    <tbody id="response<?= $card['nome'] ?>">
-                    </tbody>
-                </table>
-                <div>
-                    <button type="button" class="btn btn-link" data-target="responseCardTitulo<?= $card['nome'] ?>" id="fecharModalTitulo">
-                        <a>fechar</a>
-                    </button>
-                </div>
-            </dialog>
-        </div>-->
         <link rel="stylesheet" href="./assets/styles/styleDialog.css">
         <script src="./assets/scripts/apiResponseCards.js"></script>
         <script src="./assets/scripts/fecharModal.js"></script>
