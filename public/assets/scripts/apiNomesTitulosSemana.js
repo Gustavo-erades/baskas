@@ -18,39 +18,41 @@ document.addEventListener("DOMContentLoaded", (api) => {
     };
     xhr.send('votNomes=' + encodeURIComponent(api));
 });
+/* insere nomes */
 function insereNomesMvp(data) {
     var elementoPai = document.querySelector("#mvp");
     data[0].forEach(function (item) {
         if ('erro' in item) {
             console.log(item.erro);
         } else {
-                const option = document.createElement('option');
-                option.textContent = item.nomeVotMvp
-                elementoPai.appendChild(option);  
+            const option = document.createElement('option');
+            option.textContent = item.nomeVotMvp
+            elementoPai.appendChild(option);
         }
     });
 };
 function insereNomesMip(data) {
-    var elementoPai1 = document.querySelector("#mip");
+    var elementoPai = document.querySelector("#mip");
     data[1].forEach(function (item) {
         if ('erro' in item) {
             console.log(item.erro);
         } else {
-                const option = document.createElement('option');
-                option.textContent = item.nomeVotmip
-                elementoPai1.appendChild(option);  
+            const option = document.createElement('option');
+            option.textContent = item.nomeVotmip
+            elementoPai.appendChild(option);
         }
     });
 }
 function insereNomesBagre(data) {
-    var elementoPai2 = document.querySelector("#bagre");
+    var elementoPai = document.querySelector("#bagre");
     data[2].forEach(function (item) {
         if ('erro' in item) {
             console.log(item.erro);
         } else {
-                const option = document.createElement('option');
-                option.textContent = item.nomeVotbagre
-                elementoPai2.appendChild(option);  
+            const option2 = document.createElement('option');
+            option2.textContent = item.nomeVotbagre
+            elementoPai.appendChild(option2);
+            console.log(elementoPai)
         }
     });
 }

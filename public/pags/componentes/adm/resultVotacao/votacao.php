@@ -8,34 +8,51 @@
     <h3 id="contagemVotos">
         <span id="numVotos"></span> votos
     </h3>
-    <!-- mvp -->
-    <div class="divVotTitulo">
-        <span id="votTitulo">
-            <h3>MVP</h3>
-        </span>
-        <h4>mais votado (<span id="quantVotMvp"></span>) : <span id="nomeVotMvp">nome</span></h4>
-        <button class="btn btn-link" id="Mvp" onclick="apiResponseVotDialog(this)">mais votos</button>
-    </div>
-    <!-- mip -->
-    <div class="divVotTitulo">
-        <span id="votTitulo">
-            <h3>MIP</h3>
-        </span>
-        <h4>mais votado (<span id="quantVotMip"></span>) : <span id="nomeVotMip">nome</span></h4>
-        <button class="btn btn-link" id="Mip" onclick="apiResponseVotDialog(this)">mais votos</button>
-    </div>
-    <!-- Bagre -->
-    <div class="divVotTitulo">
-        <span id="votTitulo">
-            <h3>Bagre</h3>
-        </span>
-        <h4>mais votado (<span id="quantVotBagre"></span>) : <span id="nomeVotBagre">nome</span></h4>
-        <button class="btn btn-link" id="Bagre" onclick="apiResponseVotDialog(this)">mais votos</button>
+    <div class="row">
+        <!-- mvp -->
+        <div class="col-12 col-md-4">
+            <div class="divVotTitulo">
+                <span id="votTitulo">
+                    <h3>MVP</h3>
+                </span>
+                <h4>mais votado (<span id="quantVotMvp"></span>) : <span id="nomeVotMvp">nome</span></h4>
+                <button class="btn btn-link" id="Mvp" onclick="apiResponseVotDialog(this)">mais votos</button>
+            </div>
+            <div style="width:450px">
+                <canvas id="grafMvp"></canvas>
+            </div>
+        </div>
+        <!-- mip -->
+        <div class="col-12 col-md-4">
+            <div class="divVotTitulo">
+                <span id="votTitulo">
+                    <h3>MIP</h3>
+                </span>
+                <h4>mais votado (<span id="quantVotMip"></span>) : <span id="nomeVotMip">nome</span></h4>
+                <button class="btn btn-link" id="Mip" onclick="apiResponseVotDialog(this)">mais votos</button>
+            </div>
+            <div style="width:450px">
+                <canvas id="grafMip"></canvas>
+            </div>
+        </div>
+        <!-- Bagre -->
+        <div class="col-12 col-md-4">
+            <div class="divVotTitulo">
+                <span id="votTitulo">
+                    <h3>Bagre</h3>
+                </span>
+                <h4>mais votado (<span id="quantVotBagre"></span>) : <span id="nomeVotBagre">nome</span></h4>
+                <button class="btn btn-link" id="Bagre" onclick="apiResponseVotDialog(this)">mais votos</button>
+            </div>
+            <div style="width:450px">
+                <canvas id="grafBagre"></canvas>
+            </div>
+        </div>
     </div>
 </div>
 <!-- modal de mais votos -->
 <div id="divDialog">
-    <dialog id="dialogVotMvp" class="bg-dark"> 
+    <dialog id="dialogVotMvp" class="bg-dark">
         <table class="table table-dark table-hover">
             <thead>
                 <th>Nome</th>
@@ -88,3 +105,5 @@
 <script src="./assets/scripts/apiResponseDiaVot.js"></script>
 <script src="./assets/scripts/apiResponseVotDialog2.js"></script>
 <script src="./assets/scripts/fecharModal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./assets/scripts/apiDadosGrafs.js"></script>

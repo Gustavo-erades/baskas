@@ -34,7 +34,7 @@ function listaNomesMvp($conn)
 function listaNomesMip($conn)
 {
     $sql = '
-        SELECT mip AS nomeVotmip
+        SELECT DISTINCT mip AS nomeVotmip
         FROM bd_baskas.votacao;
     ';
     $stmt = mysqli_prepare($conn, $sql);
@@ -59,7 +59,7 @@ function listaNomesMip($conn)
 function listaNomesBagre($conn)
 {
     $sql = '
-        SELECT bagre AS nomeVotbagre
+        SELECT DISTINCT bagre AS nomeVotbagre
         FROM bd_baskas.votacao;
     ';
     $stmt = mysqli_prepare($conn, $sql);
