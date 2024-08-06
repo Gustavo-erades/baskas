@@ -92,7 +92,7 @@ function listaCardsAdm()
                                 </div>
                                 <div class="divHistorico">
                                     <label for="hist">hist</label>
-                                    <input type='number' class='inputCard' value=<?= $card['historico'] ?> name='historico' id="hist" style="width:70px;" min=50 step="0.1">
+                                    <input type='number' class='inputCard' value=<?= $card['historico'] ?> name='historico' id="hist" style="width:70px;" min=0 max=99 step="0.1">
                                 </div>
                             </div>
                         </div>
