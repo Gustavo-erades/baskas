@@ -106,4 +106,4 @@
 <script src="./assets/scripts/apiResponseVotDialog2.js"></script>
 <script src="./assets/scripts/fecharModal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="./assets/scripts/apiDadosGrafs.js"></script>
+<script src="./assets/scripts/apiDadosGrafs3.js"></script>
