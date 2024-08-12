@@ -10,6 +10,9 @@
     </h3>
     <div class="row">
         <!-- mvp -->
+         <button onclick="fetchDataAndRenderChart()">
+            clicar
+         </button>
         <div class="col-12 col-md-4">
             <div class="divVotTitulo">
                 <span id="votTitulo">

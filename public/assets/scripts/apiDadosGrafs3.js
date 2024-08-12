@@ -1,25 +1,20 @@
-/* insere dados no gráfico */
-document.addEventListener("DOMContentLoaded", (api) => {
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '../app/services/apiResponseVotDialog.php', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onload = function () {
-        if (xhr.status >= 200 && xhr.status < 400) {
-            var data = JSON.parse(xhr.responseText);
-            const array1=[]
-            data.forEach(function (item) {
-                    array1.push(item.nomeVotMvp);
-            });
-            console.log("Teste:"+array1)
 
-            const ctx1 = document.getElementById('grafMvp');
+
+const ctx1 = document.getElementById('grafMvp');
+
+       // Função para buscar dados da API e criar o gráfico
+       async function fetchDataAndRenderChart() {
+        try {
+            const response = await fetch(' ../app/services/apiResponseDataGraf.php');
+            const data = await response.json();
+            console.log(data[0])
             new Chart(ctx1, {
                 type: 'bar',
                 data: {
-                    labels: array1,
+                    labels: [data[0],data[1],data[2]],
                     datasets: [{
                         label: 'Título de MVP',
-                        data: [1, 8, 3],
+                        data: [1,3,5],
                         borderWidth: 1
                     }]
                 },
@@ -36,20 +31,48 @@ document.addEventListener("DOMContentLoaded", (api) => {
                     }
                 }
             });
-
-
-
-        } else {
-            console.error('Erro ao carregar dados:' + xhr.statusText);
+        } catch (error) {
+            console.error('Erro ao buscar dados:', error);
         }
-    };
-    xhr.onerror = function () {
-        console.error('Erro de rede ao tentar carregar dados.');
-    };
-    xhr.send('votNomes=' + encodeURIComponent(api));
-});
-/* mvp */
+    }
 
+    // Chame a função para criar o gráfico
+   
+
+
+
+
+
+
+
+
+
+
+/* mvp 
+const ctx1 = document.getElementById('grafMvp');
+new Chart(ctx1, {
+    type: 'bar',
+    data: {
+        labels: ['nome', 'nome2', 'nome3'],
+        datasets: [{
+            label: 'Título de MVP',
+            data: [1, 8, 3],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});*/
 /* mip */
 const ctx2 = document.getElementById('grafMip');
 new Chart(ctx2, {
