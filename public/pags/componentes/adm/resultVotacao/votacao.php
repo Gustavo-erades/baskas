@@ -1,5 +1,5 @@
 <a class="btn" id="lancarVotacao">
-    Lançar votação
+    Abrir votação
 </a>
 <div>
     <h3 id="diaVotos">

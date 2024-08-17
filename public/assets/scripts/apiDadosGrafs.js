@@ -3,21 +3,25 @@ const ctx2 = document.getElementById('grafMip');
 const ctx3 = document.getElementById('grafBagre');
 // Função para buscar dados da API e criar o gráfico
 /* mvp */
+let chartMvp;
+const nomesMvp = [];
+const votosMvp = [];
 async function fetchDataAndRenderChartMvp() {
     try {
+        console.log("chamando função mvp");
         const response = await fetch(' ../app/services/apiResponseDataGrafMvp.php');
         const data = await response.json();
-        const nomesMvp = [];
-        for (let i = 0; i < data.length; i++) { // Corrigido para 'length' e a condição 'i < data.length'
+        
+        for (let i = 0; i < data.length; i++) { 
             nomesMvp.push(data[i]['labels']);
         }
 
-        const votosMvp = [];
-        for (let i = 0; i < data.length; i++) { // Corrigido para 'length' e a condição 'i < data.length'
+        
+        for (let i = 0; i < data.length; i++) { 
             votosMvp.push(data[i]['votosMvp']);
         }
 
-        new Chart(ctx1, {
+        chartMvp=new Chart(ctx1, {
             type: 'bar',
             data: {
                 labels: nomesMvp,
@@ -45,21 +49,23 @@ async function fetchDataAndRenderChartMvp() {
     }
 }
 /* mip */
+let chartMip;
+const nomesMip = [];
+const votosMip = [];
 async function fetchDataAndRenderChartMip() {
     try {
+        console.log("chamando função mip");
         const response = await fetch(' ../app/services/apiResponseDataGrafMip.php');
         const data = await response.json();
-        const nomesMip = [];
         for (let i = 0; i < data.length; i++) { 
             nomesMip.push(data[i]['labels']);
         }
 
-        const votosMip = [];
         for (let i = 0; i < data.length; i++) { 
             votosMip.push(data[i]['votosMip']);
         }
 
-        new Chart(ctx2, {
+        chartMip=new Chart(ctx2, {
             type: 'bar',
             data: {
                 labels: nomesMip,
@@ -89,21 +95,23 @@ async function fetchDataAndRenderChartMip() {
     }
 }
 /* bagre */
+let chartBagre;
+const nomesBagre = [];
+const votosBagre = [];
 async function fetchDataAndRenderChartBagre() {
     try {
+        console.log("chamando função bagre");
         const response = await fetch(' ../app/services/apiResponseDataGrafBagre.php');
         const data = await response.json();
-        const nomesBagre = [];
         for (let i = 0; i < data.length; i++) { 
             nomesBagre.push(data[i]['labels']);
         }
 
-        const votosBagre = [];
         for (let i = 0; i < data.length; i++) { 
             votosBagre.push(data[i]['votosBagre']);
         }
 
-        new Chart(ctx3, {
+        chartBagre=new Chart(ctx3, {
             type: 'bar',
             data: {
                 labels: nomesBagre,
@@ -127,6 +135,7 @@ async function fetchDataAndRenderChartBagre() {
                 }
             }
         });
+
 
     } catch (error) {
         console.error('Erro ao buscar dados:', error);
