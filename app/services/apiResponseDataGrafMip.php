@@ -3,7 +3,7 @@ require_once("../database/conexao.php");
 header('Content-Type: application/json');
 
 // Definir a consulta SQL
-$sql = 'SELECT DISTINCT mvp AS labels FROM bd_baskas.votacao';
+$sql = 'SELECT DISTINCT mip AS labels, COUNT(*) AS votosMip FROM bd_baskas.votacao GROUP BY mip';
 
 // Preparar a declaração SQL
 $stmt = mysqli_prepare($conn, $sql);

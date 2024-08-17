@@ -10,9 +10,6 @@
     </h3>
     <div class="row">
         <!-- mvp -->
-         <button onclick="fetchDataAndRenderChart()">
-            clicar
-         </button>
         <div class="col-12 col-md-4">
             <div class="divVotTitulo">
                 <span id="votTitulo">
@@ -109,4 +106,5 @@
 <script src="./assets/scripts/apiResponseVotDialog2.js"></script>
 <script src="./assets/scripts/fecharModal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="./assets/scripts/apiDadosGrafs3.js"></script>
+<script src="./assets/scripts/apiDadosGrafs.js"></script>
+<script src="./assets/scripts/grafsVotos.js"></script>
