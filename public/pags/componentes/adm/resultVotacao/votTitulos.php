@@ -27,6 +27,7 @@
             </div>
         </div>  
     </div>
-    <a class="btn mt-4" id="lancarVotacao">Lançar</a>
+    <a class="btn mt-4" id="lancarVotacao" onclick="apiRegistraTitulos()">Lançar</a>
 </div>
 <script src="./assets/scripts/apiNomesTitulosSemana.js"></script>
+<script src="./assets/scripts/apiRegistraTitulos.js"></script>
