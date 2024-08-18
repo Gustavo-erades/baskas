@@ -1,26 +1,18 @@
-function apiRegistraTitulos(){
-    const mvpDoJogo=document.getElementById("mvp").value;
-    const mipDoJogo=document.getElementById("mip").value;
-    const bagreDoJogo=document.getElementById("bagre").value;
+function apiRegistraTitulos() {
+    const mvpDoJogo = document.getElementById("mvp").value;
+    const mipDoJogo = document.getElementById("mip").value;
+    const bagreDoJogo = document.getElementById("bagre").value;
 
-    const titulos=[mvpDoJogo,mipDoJogo,bagreDoJogo];
+    const titulos = [mvpDoJogo, mipDoJogo, bagreDoJogo];
 
-    console.log(titulos)
-    
-    var xhr= new XMLHttpRequest();
-    xhr.open('POST','../app/services/apiRegistraTitulos.php',true);
-    xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-    xhr.onload=function (){
-        if(xhr.status>=200 && xhr.status<400){
-            var data=JSON.parse(xhr.responseText);
-            console.log(data);
-        }else{
-            console.error('Erro ao carregar dados: '+ xhr.statusText);
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log("Resposta da api:"+this.responseText);
         }
-    }
-    xhr.onerror=function (){
-        console.error('Erro de rede ao tentar carregar dados.');
-    }
-    xhr.send('titulos='+encodeURIComponent(titulos))
-
+    };
+    xhr.open('POST', '../app/services/apiRegistraTitulos.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send('titulos=' + titulos);
 }
