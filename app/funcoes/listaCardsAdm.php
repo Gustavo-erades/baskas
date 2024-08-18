@@ -108,7 +108,7 @@ function listaCardsAdm()
                     <button class='btn btn-link' type='button' onclick="apiTituloCards('<?= $card['nome'] ?>')">
                         títulos
                     </button>
-                    <button class='btn btn-link' type='button' onclick="apiTituloCards('<?= $card['nome'] ?>')">
+                    <button class='btn btn-link' type='button' onclick="evolucaoDialog()">
                         evolução
                     </button>
                 </div>
@@ -132,9 +132,21 @@ function listaCardsAdm()
                 </div>
             </dialog>
         </div>
+        <!-- evolução -->
+          <!-- histórico -->
+        <div id="divDialog">
+        <canvas id="grafEvolucao"></canvas>
+            <!--
+            <dialog id="dialogEvolucao" class="bg-dark">
+                <canvas id="grafEvolucao"></canvas>
+            </dialog>
+    -->
+        </div>
         <link rel="stylesheet" href="./assets/styles/styleDialog.css">
         <script src="./assets/scripts/apiResponseCards.js"></script>
         <script src="./assets/scripts/fecharModal.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./assets/scripts/evolucaoDialog.js"></script>
 <?php
     }
 }
