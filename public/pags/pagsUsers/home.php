@@ -37,7 +37,7 @@
       ?>
 
       <!-- votações -->
-      <div id="votacoes">
+      <div id="votacoes" class="mt-4">
         <h2>Votação aberta</h2>
         <div class="card">
           <div class="card-header">

@@ -1,15 +1,18 @@
 dialog{
     border-radius:8px;
     border:none;
-    padding-right:5px;
-    padding-top:5px;
-    padding-bottom:5px;
-    margin-left:1rem;
-    margin-top:1rem;
     box-shadow:0 0 1em rgb(0 0 0 / .5);
-    margin-left:25vh;
-    margin-top:25vh;
+    margin: 0 auto 0 auto  ;
+    margin-top: 10%;
 }
 thead, tbody,dialog div{
     text-align: center;
+}
+.tabelaHistGraf{
+    width: 600px;
+}
+@media (max-width: 767.98px){
+    .tabelaHistGraf{
+        width: 350px;
+    }
 }
