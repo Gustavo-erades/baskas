@@ -86,6 +86,9 @@ async function fetchDataAndRenderChartMip() {
                     y: {
                         beginAtZero: true
                     }
+                },
+                animation:{
+                    easing:'easeOutQuad'
                 }
             }
         });
