@@ -3,7 +3,6 @@ require_once("../database/conexao.php");
 header('Content-Type: application/json');
 $return = array();
 $votTitulo=strtolower($_POST['votTitulo']);
-//echo $votTitulo;
 $sql = '
         SELECT '.$votTitulo.' AS nomeVotMvp, COUNT(*) AS quantVotMvp
         FROM bd_baskas.votacao

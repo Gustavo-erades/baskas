@@ -105,7 +105,7 @@ function listaCardsAdm()
                     <button class='btn btn-link' id='<?= $card['nome'] ?>' type='button' name='salvarAttr' value=<?= $card['nome'] ?> onclick="apiResponseCards('<?= $card['nome'] ?>')">
                         histórico
                     </button>
-                    <button class='btn btn-link' type='button' onclick="apiTituloCards('<?= $card['nome'] ?>')">
+                    <button class='btn btn-link' type='button' id="Titulo" onclick="apiResponseTitulo('<?= $card['nome'] ?>')">
                         títulos
                     </button>
                     <button class='btn btn-link' type='button' onclick="evolucaoDialog2()">
@@ -135,9 +135,26 @@ function listaCardsAdm()
                 </div>
             </dialog>
         </div>
+        <!-- títulos -->
+        <dialog id="dialogTitulo" class="bg-dark">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <th>Título</th>
+                    <th>Dia</th>
+                </thead>
+                <tbody id="responseTitulo">
+                </tbody>
+            </table>
+            <div>
+                <button type="button" class="btn btn-link" data-target="dialogTitulo" id="fecharModal" data-target="dialog  Titulo">
+                    <a>fechar</a>
+                </button>
+            </div>
+        </dialog>
         <link rel="stylesheet" href="./assets/styles/styleDialog.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="./assets/scripts/apiResponseCards.js"></script>
+        <script src="./assets/scripts/apiResponseTitulo.js"></script>
         <script src="./assets/scripts/fecharModal.js"></script>
 <?php
     }
