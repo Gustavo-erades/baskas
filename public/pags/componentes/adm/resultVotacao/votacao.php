@@ -108,3 +108,4 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./assets/scripts/apiDadosGrafs.js"></script>
 <script src="./assets/scripts/grafsVotos.js"></script>
+<script src="./assets/scripts/atualizaDadosVot.js"></script>
