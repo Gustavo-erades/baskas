@@ -1,5 +1,5 @@
 <?php
-require_once("../database/conexao.php");
+require("../database/conexao.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['titulos'])) {
     $voto = explode(",", $_POST['titulos']);
 
@@ -25,10 +25,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['titulos'])) {
             echo 'Erro na execução da declaração SQL: ' . mysqli_stmt_error($stmt);
         } else {
             echo "voto cadastrado com sucesso!";
+            zerarBdVotos($conn);
         }
         mysqli_stmt_close($stmt);
     }
     $conn->close();
 } else {
     echo "Voto não enviado";
+}
+function zerarBdVotos($conn)
+{
+    $sql = 'TRUNCATE TABLE bd_baskas.votacao;';
+    $stmt = mysqli_prepare($conn, $sql);
+    if ($stmt === false) {
+        echo 'Erro na preparação da declaração SQL: ' . mysqli_error($conn);
+    } else {
+        $result = mysqli_stmt_execute($stmt);
+        if ($result === false) {
+            echo 'Erro na execução da declaração SQL: ' . mysqli_stmt_error($stmt);
+        } else {
+            echo "dados da votação zerados com sucesso!";
+        }
+        mysqli_stmt_close($stmt);
+    }
+    $conn->close();
 }
