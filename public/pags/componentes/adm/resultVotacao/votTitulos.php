@@ -21,13 +21,14 @@
             <div class="card bg-danger text-light">
                 <div class="card-body">
                     <h3><b>Bagre</b></h3>
-                    <select class="form-select form-select-md mb-3"  id="bagre">
+                    <select class="form-select form-select-md mb-3" id="bagre">
                     </select>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
     <a class="btn mt-4" id="lancarVotacao" onclick="apiRegistraTitulos()">Lançar</a>
 </div>
 <script src="./assets/scripts/apiNomesTitulosSemana.js"></script>
 <script src="./assets/scripts/apiRegistraTitulos.js"></script>
+<script src="./assets/scripts/atualizaNomesTitulosSemana.js"></script>

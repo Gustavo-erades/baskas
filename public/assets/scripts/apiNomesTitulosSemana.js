@@ -56,22 +56,3 @@ function insereNomesBagre(data) {
         }
     });
 }
-/* atualiza nomes a cada 5 segundos */
-const atualizaNomesMvp=()=>{
-    const endpoint="../app/services/apiNomesTitulosSemana.php";
-    var elementoPai = document.querySelector("#mvp");
-    fetch(endpoint)
-    .then(res=>res.json())
-    .then(res=>{
-        for (let i = 0; i < res.length; i++) { 
-            if ('erro' in res) {
-                console.log(res.erro);
-            } else {
-                const option = document.createElement('option');
-                option.textContent = res.nomeVotMvp
-                elementoPai.appendChild(option);
-            }
-        }
-    })
-}
-setInterval(atualizaNomesMvp,5000);
