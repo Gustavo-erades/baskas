@@ -1,7 +1,10 @@
-<a class="btn" id="lancarVotacao">
+<a class="btn abrirVot" id="lancarVotacao" onclick="apiAbrirVotacaoAdm()">
     Abrir votação
 </a>
-<div>
+<a class="btn fecharVot" id="lancarVotacao" style="display: none;" onclick="apiFecharVotacaoAdm()">
+    Fechar votação
+</a>
+<div class="divVotAdm">
     <h3 id="diaVotos">
         <span id="dia"></span>
     </h3>
@@ -108,4 +111,5 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./assets/scripts/apiDadosGrafs.js"></script>
 <script src="./assets/scripts/grafsVotos.js"></script>
+<script src="./assets/scripts/apiAbrirVotacaoAdm.js"></script>
 <script src="./assets/scripts/atualizaDadosVot.js"></script>
